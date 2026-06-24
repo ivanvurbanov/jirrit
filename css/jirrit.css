@@ -12,7 +12,7 @@
     font-size: 12px;
     min-height: 30px;
     min-width: 400px;
-    max-width: 600px;
+    max-width: min(760px, calc(100vw - 60px));
     position: fixed;
     right: 30px;
     top: 70px;
@@ -83,6 +83,26 @@
 
 .gerrit-jira-change-list table {
     width: 100%;
+}
+
+.gerrit-jira-change-list thead th {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding-bottom: 4px;
+}
+
+.gerrit-jira-sort {
+    cursor: pointer;
+    user-select: none;
+    text-align: left;
+    white-space: nowrap;
+    color: rgb(48, 48, 48);
+}
+
+.gerrit-jira-sort:hover {
+    text-decoration: underline;
 }
 
 .gerrit-jira-change {
