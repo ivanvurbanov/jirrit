@@ -75,12 +75,23 @@
 
 /* Gerrit Changes */
 
+.gerrit-jira-change-list {
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gerrit-jira-change-list table {
+    width: 100%;
+}
+
 .gerrit-jira-change {
     padding: 5px 0;
 }
 
 .gerrit-jira-change-link {
     padding-right: 5px;
+    overflow-wrap: anywhere;
 }
 
 .gerrit-jira-change-repo {
